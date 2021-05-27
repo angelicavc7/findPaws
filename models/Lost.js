@@ -1,6 +1,5 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../Config/connection");
-const bcrypt = require("bcrypt");
 
 class Lost extends Model {}
 Lost.init(
