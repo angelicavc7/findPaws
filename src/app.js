@@ -1,5 +1,6 @@
 import React from "react";
 import './App.css';
+import Dashboard from "./components/pages/Dashboard/Dashboard";
 
 
 
@@ -8,7 +9,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>
-          This is <code>findpaws </code> Project!
+          This is <code>findpaws</code> Project!
+          < Dashboard/>
         </p>
       </header>
     </div>
