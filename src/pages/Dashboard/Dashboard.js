@@ -22,7 +22,7 @@ function Dashboard() {
           <Breadcrumb.Item>List</Breadcrumb.Item>
           <Breadcrumb.Item>App</Breadcrumb.Item>
         </Breadcrumb>
-        <div className="site-layout-content">Content</div>
+        <div className="site-layout-content"></div>
       </Content>
       <Footer style={{ textAlign: "center" }}>
         Ant Design ©2018 Created by Ant UED
