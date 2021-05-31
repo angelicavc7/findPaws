@@ -12,7 +12,7 @@ import {
 } from "antd";
 import { UploadOutlined } from "@ant-design/icons";
 
-const Found = () => {
+const FoundForm = () => {
   const [componentSize, setComponentSize] = useState("default");
 
   const onFormLayoutChange = ({ size }) => {
@@ -97,4 +97,4 @@ const Found = () => {
   );
 };
 
-export default Found;
+export default FoundForm;
