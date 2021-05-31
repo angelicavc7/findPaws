@@ -2,7 +2,7 @@ import React from "react";
 import "antd/dist/antd.css";
 import "./Dashboard.css";
 import { Layout, Menu, Breadcrumb } from "antd";
-
+import FoundForm from "../../Components/Found/FoundForm";
 const { Header, Content, Footer } = Layout;
 
 function Dashboard() {
@@ -22,7 +22,9 @@ function Dashboard() {
           <Breadcrumb.Item>List</Breadcrumb.Item>
           <Breadcrumb.Item>App</Breadcrumb.Item>
         </Breadcrumb>
-        <div className="site-layout-content">Content</div>
+        <div className="site-layout-content">
+          <FoundForm></FoundForm>
+        </div>
       </Content>
       <Footer style={{ textAlign: "center" }}>
         Ant Design ©2018 Created by Ant UED

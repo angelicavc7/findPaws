@@ -2,7 +2,6 @@ import React from "react";
 import "antd/dist/antd.css";
 import "./Dashboard.css";
 import { Layout, Menu, Breadcrumb } from "antd";
-
 const { Header, Content, Footer } = Layout;
 
 function Dashboard() {
@@ -22,7 +21,9 @@ function Dashboard() {
           <Breadcrumb.Item>List</Breadcrumb.Item>
           <Breadcrumb.Item>App</Breadcrumb.Item>
         </Breadcrumb>
-        <div className="site-layout-content"></div>
+        <div className="site-layout-content">
+          <h1>hello world</h1>
+        </div>
       </Content>
       <Footer style={{ textAlign: "center" }}>
         Ant Design ©2018 Created by Ant UED
