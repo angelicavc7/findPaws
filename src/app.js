@@ -1,8 +1,6 @@
 import React from "react";
-import './App.css';
-import Dashboard from "./components/pages/Dashboard/Dashboard";
-
-
+import "./App.css";
+import FormSizeDemo from "./Components/Form/FormSizeDemo";
 
 function App() {
   return (
@@ -10,9 +8,13 @@ function App() {
       <header className="App-header">
         <p>
           This is <code>findpaws</code> Project!
-          < Dashboard/>
         </p>
       </header>
+      <body>
+        <div>
+          <FormSizeDemo />
+        </div>
+      </body>
     </div>
   );
 }
