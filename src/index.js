@@ -2,11 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import './index.css';
 import App from "./App";
-import Dashboard from "./components/pages/Dashboard/Dashboard";
+import Dashboard from "./pages/Dashboard/Dashboard.js";
 
 ReactDOM.render(
     <React.StrictMode>
-      <Dashboard />
+      <Dashboard/>
     </React.StrictMode>,
     document.getElementById('root')
   );
