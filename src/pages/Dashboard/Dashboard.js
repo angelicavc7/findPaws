@@ -38,9 +38,7 @@ function Dashboard() {
     <div>
     <Card/>
     </div>
-    <div>
-    <Card/>
-    </div>
+   
 
           </div>
         </Content>
