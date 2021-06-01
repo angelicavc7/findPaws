@@ -1,15 +1,6 @@
 import React, { useState } from "react";
 import "antd/dist/antd.css";
-import {
-  Form,
-  Input,
-  Button,
-  Select,
-  DatePicker,
-  InputNumber,
-  Upload,
-  message,
-} from "antd";
+import { Form, Input, Button, Select, DatePicker, Upload, message } from "antd";
 import { UploadOutlined } from "@ant-design/icons";
 
 const FoundForm = () => {
@@ -80,20 +71,19 @@ const FoundForm = () => {
             <Select.Option value="Dog">Deceased </Select.Option>
           </Select>
         </Form.Item>
+        <Form.Item label="Date Found">
+          <DatePicker />
+        </Form.Item>
         <Form.Item label="Last Seen Location">
           <Input />
-          <InputNumber />
-        </Form.Item>
-        <Form.Item label="Date Lost">
-          <DatePicker />
         </Form.Item>
         <Form.Item>
           <Upload {...props}>
             <Button icon={<UploadOutlined />}>Upload Image</Button>
           </Upload>
         </Form.Item>
-        <Form.Item label="Button">
-          <Button type="primary">Post</Button>
+        <Form.Item>
+          <Button type="primary">Post Pet </Button>
         </Form.Item>
       </Form>
     </>

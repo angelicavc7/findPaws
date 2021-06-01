@@ -52,6 +52,18 @@ const FormSizeDemo = () => {
         onValuesChange={onFormLayoutChange}
         size={componentSize}
       >
+        <Form.Item label="First Name ">
+          <Input />
+        </Form.Item>
+        <Form.Item label="Last Name ">
+          <Input />
+        </Form.Item>
+        <Form.Item label="Phone Num">
+          <Input />
+        </Form.Item>
+        <Form.Item label="Email">
+          <Input />
+        </Form.Item>
         <Form.Item label="Pet Name">
           <Input />
         </Form.Item>
@@ -75,11 +87,11 @@ const FormSizeDemo = () => {
         </Form.Item>
         <Form.Item>
           <Upload {...props}>
-            <Button icon={<UploadOutlined />}>Click to Upload</Button>
+            <Button icon={<UploadOutlined />}>Upload Image</Button>
           </Upload>
         </Form.Item>
-        <Form.Item label="Button">
-          <Button type="primary">Post</Button>
+        <Form.Item>
+          <Button type="primary">Post Pet</Button>
         </Form.Item>
       </Form>
     </>

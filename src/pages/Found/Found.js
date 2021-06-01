@@ -1,11 +1,11 @@
 import React from "react";
 import "antd/dist/antd.css";
-import "./Dashboard.css";
 import { Layout, Breadcrumb } from "antd";
+import FoundForm from "../../components/Found/FoundForm";
 import Header from "../../components/Header/Header";
 const { Content, Footer } = Layout;
 
-function Dashboard() {
+function Found() {
   return (
     <div>
       <Layout className="layout">
@@ -17,7 +17,7 @@ function Dashboard() {
             <Breadcrumb.Item>App</Breadcrumb.Item>
           </Breadcrumb>
           <div className="site-layout-content">
-            <h1>Find your child!</h1>
+            <FoundForm></FoundForm>
           </div>
         </Content>
         <Footer style={{ textAlign: "center" }}>
@@ -28,4 +28,4 @@ function Dashboard() {
     // document.getElementById("container")
   );
 }
-export default Dashboard;
+export default Found;
