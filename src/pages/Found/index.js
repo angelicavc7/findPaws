@@ -1,13 +1,14 @@
 import React from "react";
 import "antd/dist/antd.css";
-import "./Dashboard.css";
-import { Layout, Menu, Breadcrumb } from "antd";
-import FoundForm from "../../Components/Found/FoundForm";
+
+import { Layout, Breadcrumb } from "antd";
+import FoundForm from "../../components/Found/FoundForm";
 import Header from "../../components/Header/Header"
 const { Content, Footer } = Layout;
 
-function Dashboard() {
+function Found() {
   return (
+    <div>
     <Layout className="layout">
      <Header/>
       <Content style={{ padding: "0 50px" }}>
@@ -24,7 +25,8 @@ function Dashboard() {
         Ant Design ©2018 Created by Ant UED
       </Footer>
     </Layout>
+    </div>
     // document.getElementById("container")
   );
 }
-export default Dashboard;
+export default Found;

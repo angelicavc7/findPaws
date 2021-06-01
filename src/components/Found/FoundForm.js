@@ -84,6 +84,9 @@ const FoundForm = () => {
           <Input />
           <InputNumber />
         </Form.Item>
+        <Form.Item label="Date Lost">
+          <DatePicker />
+        </Form.Item>
         <Form.Item>
           <Upload {...props}>
             <Button icon={<UploadOutlined />}>Upload Image</Button>

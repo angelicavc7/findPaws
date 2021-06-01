@@ -1,12 +1,13 @@
 import React from "react";
 import "antd/dist/antd.css";
 import "./Dashboard.css";
-import { Layout, Menu, Breadcrumb } from "antd";
+import { Layout, Breadcrumb } from "antd";
 import Header from "../../components/Header/Header"
 const { Content, Footer } = Layout;
 
 function Dashboard() {
   return (
+    <div>
     <Layout className="layout">
   
     <Header/>
@@ -18,13 +19,14 @@ function Dashboard() {
           <Breadcrumb.Item>App</Breadcrumb.Item>
         </Breadcrumb>
         <div className="site-layout-content">
-          <h1>hello world</h1>
+          <h1>Find your child!</h1>
         </div>
       </Content>
       <Footer style={{ textAlign: "center" }}>
         Ant Design ©2018 Created by Ant UED
       </Footer>
     </Layout>
+    </div>
     // document.getElementById("container")
   );
 }
