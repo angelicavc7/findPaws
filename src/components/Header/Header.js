@@ -55,6 +55,20 @@ function Header() {
             Lost
           </Link>
         </Menu.Item>
+
+        <Menu.Item className="Menu-item">
+          <Link
+            to="/Shelter"
+            className={
+              window.location.pathname === "/" ||
+              window.location.pathname === "/Shelter"
+                ? "Menu-link active"
+                : "Menu-link"
+            }
+          >
+            Shelter
+          </Link>
+        </Menu.Item>
       </Menu>
     </div>
   );
