@@ -1,16 +1,15 @@
 import React from "react";
 import "antd/dist/antd.css";
-import "./Dashboard.css";
-import { Layout, Menu, Breadcrumb } from "antd";
+import { Layout, Breadcrumb } from "antd";
 import FormSizeDemo from "../../Components/Form/FormSizeDemo";
-import Header from "../../components/Header/Header"
+import Header from "../../Components/Header/Header";
 const { Content, Footer } = Layout;
 
-function Dashboard() {
+function Lost() {
   return (
     <Layout className="layout">
-      <Header/>
-       
+      <Header />
+
       <Content style={{ padding: "0 50px" }}>
         <Breadcrumb style={{ margin: "16px 0" }}>
           <Breadcrumb.Item>Home</Breadcrumb.Item>
@@ -28,4 +27,4 @@ function Dashboard() {
     // document.getElementById("container")
   );
 }
-export default Dashboard;
+export default Lost;

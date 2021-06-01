@@ -1,16 +1,13 @@
 import React from "react";
 import "antd/dist/antd.css";
-import "./Dashboard.css";
-import { Layout, Menu, Breadcrumb } from "antd";
-import Header from "../../components/Header/Header"
+import { Layout, Breadcrumb } from "antd";
+import Header from "../../Components/Header/Header";
 const { Content, Footer } = Layout;
 
 function Dashboard() {
   return (
     <Layout className="layout">
-  
-    <Header/>
-     
+      <Header />
       <Content style={{ padding: "0 50px" }}>
         <Breadcrumb style={{ margin: "16px 0" }}>
           <Breadcrumb.Item>Home</Breadcrumb.Item>

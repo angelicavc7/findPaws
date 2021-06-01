@@ -80,6 +80,9 @@ const FoundForm = () => {
             <Select.Option value="Dog">Deceased </Select.Option>
           </Select>
         </Form.Item>
+        <Form.Item label="Date Found">
+          <DatePicker />
+        </Form.Item>
         <Form.Item label="Last Seen Location">
           <Input />
           <InputNumber />
