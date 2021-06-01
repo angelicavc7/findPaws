@@ -2,9 +2,8 @@ import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Dashboard from "./pages/Dashboard/Dashboard";
-import Found from "./pages/Found/index";
-import Lost from "./pages/Lost/index";
-import Header from "./components/Header/Header";
+import Found from "./pages/Found/Found";
+import Lost from "./pages/Lost/Lost";
 // import {Menu} from 'antd';
 import Wrapper from "./components/Wrapper";
 
