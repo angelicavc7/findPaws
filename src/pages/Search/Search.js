@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from "../../components/Header/Header"
 
-function Shelter(){
+function Search(){
     return(
         <div>
             <Header/>
@@ -10,4 +10,4 @@ function Shelter(){
     )
 }
 
-export default Shelter;
+export default Search;
