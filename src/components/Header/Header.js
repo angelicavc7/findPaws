@@ -58,15 +58,15 @@ function Header() {
 
         <Menu.Item className="Menu-item">
           <Link
-            to="/Shelter"
+            to="/Search"
             className={
               window.location.pathname === "/" ||
-              window.location.pathname === "/Shelter"
+              window.location.pathname === "/Search"
                 ? "Menu-link active"
                 : "Menu-link"
             }
           >
-            Shelter
+            Search
           </Link>
         </Menu.Item>
       </Menu>
