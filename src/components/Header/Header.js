@@ -24,7 +24,7 @@ function Header() {
                 : "Menu-link"
             }
           >
-            Dashboard
+            Home
           </Link>
         </Menu.Item>
 
@@ -38,7 +38,7 @@ function Header() {
                 : "Menu-link"
             }
           >
-            Found
+            Found a Pet
           </Link>
         </Menu.Item>
 
@@ -52,7 +52,7 @@ function Header() {
                 : "Menu-link"
             }
           >
-            Lost
+            Lost a Pet
           </Link>
         </Menu.Item>
 
