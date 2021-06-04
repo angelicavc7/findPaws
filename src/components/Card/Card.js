@@ -8,12 +8,6 @@ function PetCard() {
       <Card title="Card title" bordered={false}>
         Card content
       </Card>
-      <Card title="Card title" bordered={false}>
-        Card content
-      </Card>
-      <Card title="Card title" bordered={false}>
-        Card content
-      </Card>
     </div>
   );
 }
