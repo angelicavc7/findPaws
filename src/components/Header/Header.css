@@ -1,0 +1,12 @@
+/* .Menu{
+    height: 60px;
+} */
+.Menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    /* position: relative; */
+}
+/* .MenuLogo{
+    background-color: rgb(144, 145, 177);
+} */
