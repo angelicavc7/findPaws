@@ -1,5 +1,6 @@
 import React from "react";
 import "antd/dist/antd.css";
+import "../Card/style.css";
 import { Card } from "antd";
 function PetCard() {
   return (
