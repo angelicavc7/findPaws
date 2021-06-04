@@ -6,13 +6,13 @@ import Header from "../../components/Header/Header";
 import Card from "../../components/Card/Index";
 import { Carousel } from 'antd';
 import Kitty21 from "./images/Kitty21.jpg"
-import Dog4 from "./images/Dog4.webp"
+import GD from "./images/GD.jpg"
 import CatBunny from "./images/CatBunny.jpg"
 import Anm from "./images/Anm.jpg"
 
 const contentStyle = {
   height: '500px',
-  color: '#fff',
+  // color: '#fff',
   lineHeight: '160px',
   textAlign: 'center',
   background: '#364d79',
@@ -36,7 +36,7 @@ function Dashboard() {
           </div>
 
          <div>
-         <img src = {Dog4} class= "dog" alt="dog" style={contentStyle} />
+         <img src = {GD} class= "dog" alt="dog" style={contentStyle} />
         </div>
         <div>
         <img src = {CatBunny} class= "CB" alt="CatBunny" style={contentStyle} />

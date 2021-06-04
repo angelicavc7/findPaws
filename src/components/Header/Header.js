@@ -1,5 +1,6 @@
 import React from "react";
 import "antd/dist/antd.css";
+import "./Header.css"
 import { Menu } from "antd";
 import { Link } from "react-router-dom";
 
@@ -13,7 +14,14 @@ function Header() {
         theme="dark"
         mode="horizontal"
         defaultSelectedKeys={["2"]}
+        // align-items = "right"
       >
+       
+        {/* <Menu.Item className="MenuLogo">
+          <h1> FindPaws</h1>
+            </Menu.Item>
+            */}
+        
         <Menu.Item className="Menu-item">
           <Link
             to="/Dashboard"
@@ -69,6 +77,7 @@ function Header() {
             Search
           </Link>
         </Menu.Item>
+      
       </Menu>
     </div>
   );
