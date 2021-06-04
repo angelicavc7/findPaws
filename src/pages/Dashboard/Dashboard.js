@@ -5,9 +5,13 @@ import { Layout } from "antd";
 import Header from "../../components/Header/Header";
 import Card from "../../components/Card/Index";
 import { Carousel } from 'antd';
+import Kitty21 from "./images/Kitty21.jpg"
+import Dog4 from "./images/Dog4.webp"
+import CatBunny from "./images/CatBunny.jpg"
+import Anm from "./images/Anm.jpg"
 
 const contentStyle = {
-  height: '160px',
+  height: '500px',
   color: '#fff',
   lineHeight: '160px',
   textAlign: 'center',
@@ -31,17 +35,18 @@ function Dashboard() {
               <h1>Find your child!</h1>
 
             <Carousel autoplay>
-          <div>
-            <h3 style={contentStyle}>1</h3>
+          <div>  
+           <img src = {Kitty21} class= "KITTY" alt="kitty" style={contentStyle} />
           </div>
+
          <div>
-        <h3 style={contentStyle}>2</h3>
+         <img src = {Dog4} class= "dog" alt="dog" style={contentStyle} />
         </div>
         <div>
-        <h3 style={contentStyle}>3</h3>
+        <img src = {CatBunny} class= "CB" alt="CatBunny" style={contentStyle} />
         </div>
        <div>
-         <h3 style={contentStyle}>4</h3>
+       <img src = {Anm} class= "animals" alt="animals" style={contentStyle} />
         </div>
           </Carousel>
 
