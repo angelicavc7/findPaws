@@ -5,9 +5,7 @@ import { Card } from "antd";
 function PetCard() {
   return (
     <div className="site-card-wrapper">
-      <Card title="Card title" bordered={false}>
-        Card content
-      </Card>
+      <Card title="Card title" bordered={false}></Card>
     </div>
   );
 }

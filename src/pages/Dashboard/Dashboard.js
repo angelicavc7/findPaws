@@ -3,7 +3,6 @@ import "antd/dist/antd.css";
 import "./Dashboard.css";
 import { Layout } from "antd";
 import Header from "../../components/Header/Header";
-// import Card from "../../components/Card/Index";
 import { Carousel } from "antd";
 import Kitty21 from "./images/Kitty21.jpg";
 import GD from "./images/GD.jpg";
