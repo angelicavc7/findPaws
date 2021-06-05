@@ -1,33 +1,33 @@
 import React, { useState } from "react";
 import "antd/dist/antd.css";
-import { Form, Input, Button, Select, DatePicker, Upload, message } from "antd";
+import { Form, Input, Button, Select, DatePicker, Upload } from "antd";
 import { UploadOutlined } from "@ant-design/icons";
 import API from "../../utils/API";
 
-const FormSizeDemo = () => {
+export default function FormSizeDemo(props) {
   const [componentSize, setComponentSize] = useState("default");
 
   const onFormLayoutChange = ({ size }) => {
     setComponentSize(size);
   };
   //upload botton
-  const props = {
-    name: "file",
-    action: "https://www.mocky.io/v2/5cc8019d300000980a055e76",
-    headers: {
-      authorization: "authorization-text",
-    },
-    onChange(info) {
-      if (info.file.status !== "uploading") {
-        console.log(info.file, info.fileList);
-      }
-      if (info.file.status === "done") {
-        message.success(`${info.file.name} file uploaded successfully`);
-      } else if (info.file.status === "error") {
-        message.error(`${info.file.name} file upload failed.`);
-      }
-    },
-  };
+  // const props = {
+  //   name: "file",
+  //   action: "https://www.mocky.io/v2/5cc8019d300000980a055e76",
+  //   headers: {
+  //     authorization: "authorization-text",
+  //   },
+  //   onChange(info) {
+  //     if (info.file.status !== "uploading") {
+  //       console.log(info.file, info.fileList);
+  //     }
+  //     if (info.file.status === "done") {
+  //       message.success(`${info.file.name} file uploaded successfully`);
+  //     } else if (info.file.status === "error") {
+  //       message.error(`${info.file.name} file upload failed.`);
+  //     }
+  //   },
+  // };
   const [formState, setFormState] = useState({
     firstName: "",
     lastName: "",
@@ -57,7 +57,6 @@ const FormSizeDemo = () => {
         dateLost: "",
         reward: "",
       });
-      console.log(formSubmit);
     });
   };
   return (
@@ -121,7 +120,6 @@ const FormSizeDemo = () => {
           <Input
             value={formState.petName}
             type="petName"
-            ç
             onChange={(e) =>
               setFormState({ ...formState, petName: e.target.value })
             }
@@ -189,6 +187,4 @@ const FormSizeDemo = () => {
       </Form>
     </>
   );
-};
-
-export default FormSizeDemo;
+}
