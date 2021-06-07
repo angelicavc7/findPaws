@@ -42,10 +42,9 @@ export default function FormSizeDemo(props) {
   //   },
   // };
 
-
   const formSubmit = (e) => {
     e.preventDefault();
-    API.createPet(formState,props).then((res) => {
+    API.createPet(formState).then((res) => {
       console.log(res.data);
       props.fetchData();
       setFormState({
@@ -58,7 +57,7 @@ export default function FormSizeDemo(props) {
         petDescription: "",
         lastSeen: "",
         dateLost: "",
-        reward: 25,
+        reward: "",
       });
     });
   };
@@ -85,39 +84,39 @@ export default function FormSizeDemo(props) {
 
 
         <Form.Item label="First Name ">
-          <Input value={formState.firstName} type="firstName" onChange={(e) => setFormState({ ...formState, firstName:e.target.value })} />
+          <Input value={formState.firstName} name ="First Name" onChange={(e) => setFormState({ ...formState, firstName:e.target.value })} />
         </Form.Item>
 
         <Form.Item label="Last Name ">
-          <Input value={formState.lastName} type="lastName" onChange={(e) => setFormState({ ...formState, lastName:e.target.value })}/>
+          <Input value={formState.lastName} name="Last Name" onChange={(e) => setFormState({ ...formState, lastName:e.target.value })}/>
         </Form.Item>
 
         <Form.Item label="Phone Number">
-          <Input value={formState.phoneNumber} type="phoneNumber" onChange={(e) => setFormState({ ...formState, phoneNumber:e.target.value })}/>
+          <Input value={formState.phoneNumber} name ="Phone Number" onChange={(e) => setFormState({ ...formState, phoneNumber:e.target.value })}/>
         </Form.Item>
 
         <Form.Item label="Email">
-          <Input value={formState.email} type="email" onChange={(e) => setFormState({ ...formState, email:e.target.value })}/>
+          <Input value={formState.email} name="Email" onChange={(e) => setFormState({ ...formState, email:e.target.value })}/>
         </Form.Item>
 
         <Form.Item label="Pet Name">
-          <Input value={formState.petName} type="petName" onChange={(e) => setFormState({ ...formState, petName:e.target.value })}/>
+          <Input value={formState.petName} name="Pet Name" onChange={(e) => setFormState({ ...formState, petName:e.target.value })}/>
         </Form.Item>
 
         <Form.Item label="Select Type Of Pet ">
           <Select>
-            <Select.Option value={formState.petType} type="petType" onChange={(e) => setFormState({ ...formState, petType:e.target.value })}>
+            <Select.Option value={formState.petType}  onChange={(e) => setFormState({ ...formState, petType:e.target.value })}>
               Dog</Select.Option>
             <Select.Option value="Cat">Cat</Select.Option>
           </Select>
         </Form.Item>
 
         <Form.Item label="Pet Description">
-          <Input value={formState.petDescription} type="petDescription" onChange={(e) => setFormState({ ...formState, petDescription:e.target.value })}/>
+          <Input value={formState.petDescription}  onChange={(e) => setFormState({ ...formState, petDescription:e.target.value })}/>
         </Form.Item>
 
         <Form.Item label="Last Seen Location">
-          <Input value={formState.lastSeen} type="lastSeen" onChange={(e) => setFormState({ ...formState, lastSeen:e.target.value })}/>
+          <Input value={formState.lastSeen} onChange={(e) => setFormState({ ...formState, lastSeen:e.target.value })}/>
         </Form.Item>
 
         <Form.Item label="Date Lost">
@@ -125,11 +124,11 @@ export default function FormSizeDemo(props) {
         </Form.Item>
 
         <Form.Item label="Reward">
-          <Input value={formState.reward} type="reward" onChange={(e) => setFormState({ ...formState, reward:e.target.value })} />
+          <Input value={formState.reward} name="Reward" onChange={(e) => setFormState({ ...formState, reward:e.target.value })} />
         </Form.Item>
 
         <Form.Item>
-          <Upload {...props}>
+          <Upload>
             <Button icon={<UploadOutlined />}>Upload Image</Button>
           </Upload>
         </Form.Item>
