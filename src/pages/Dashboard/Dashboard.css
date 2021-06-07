@@ -4,6 +4,8 @@ body {
 h1 {
   font-size: 35px;
   text-align: center;
+  margin: 2px;
+  padding:2px;
 }
 .aside{
   background-color: white;

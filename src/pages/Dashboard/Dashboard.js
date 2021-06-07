@@ -8,6 +8,7 @@ import Kitty21 from "./images/Kitty21.jpg";
 import Dog1 from "./images/Dog1.jpg";
 import Animals2 from "./images/Animals2.jpg";
 import Pup from "./images/Pup.jpg"
+import Paw from "./images/Paw.png"
 
 
 const contentStyle = {
@@ -60,6 +61,11 @@ function Dashboard() {
               <p>Will help you find your lost pet!</p>
               <p>If you have found a missing pet submit a form and post it!</p>
               <p>We understand how difficult it can be to find a pet, and were here to make it easier!</p>
+
+              <div>
+                  <img
+                    src={Paw} class="paw" alt="animals"/>
+                </div>
           </Sider> 
         </Layout>
       </Layout>
