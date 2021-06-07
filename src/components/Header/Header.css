@@ -1,12 +1,36 @@
-/* .Menu{
-    height: 60px;
-} */
-.Menu{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    /* position: relative; */
+
+.Navbar{
+  background: linear-gradient(50deg, rgb(48, 248, 138), rgb(104, 228, 160)100%); 
+  height: 80px;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
 }
-/* .MenuLogo{
-    background-color: rgb(144, 145, 177);
-} */
+
+nav.navbar.navbar-default {
+    margin-bottom: 0;
+  }
+.navbar-brand{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar-nav{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-gap: 30px;
+    list-style: none;
+    text-align: center;
+    width: 90vw;
+    justify-content: end;
+}
+.nav-link{
+    color:white;
+    text-decoration: none;
+    text-align: left;
+}
+@media screen and (max-width: 960px){
+    .nav-item{
+        position: relative;
+
+    }
+}

@@ -1,88 +1,55 @@
-import React from "react";
-import "antd/dist/antd.css";
-import "./Header.css"
-import { Menu } from "antd";
+import React from 'react'
 import { Link } from "react-router-dom";
+import "./Header.css";
 
-// const { Header, Content, Footer } = Layout;
 
 function Header() {
-  return (
-    <div className="logo">
-      <Menu
-        className="Menu"
-        theme="dark"
-        mode="horizontal"
-        defaultSelectedKeys={["2"]}
-        // align-items = "right"
-      >
-       
-        {/* <Menu.Item className="MenuLogo">
-          <h1> FindPaws</h1>
-            </Menu.Item>
-            */}
-        
-        <Menu.Item className="Menu-item">
-          <Link
-            to="/Dashboard"
-            className={
-              window.location.pathname === "/" ||
-              window.location.pathname === "/Dashboard"
-                ? "Menu-link active"
-                : "Menu-link"
-            }
-          >
-            Home
-          </Link>
-        </Menu.Item>
-
-        <Menu.Item className="Menu-item">
-          <Link
-            to="/Found"
-            className={
-              window.location.pathname === "/" ||
-              window.location.pathname === "/Found"
-                ? "Menu-link active"
-                : "Menu-link"
-            }
-          >
-            Found a Pet
-          </Link>
-        </Menu.Item>
-
-        <Menu.Item className="Menu-item">
-          <Link
-            to="/Lost"
-            className={
-              window.location.pathname === "/" ||
-              window.location.pathname === "/Lost"
-                ? "Menu-link active"
-                : "Menu-link"
-            }
-          >
-            Lost a Pet
-          </Link>
-        </Menu.Item>
-
-        <Menu.Item className="Menu-item">
-          <Link
-            to="/Search"
-            className={
-              window.location.pathname === "/" ||
-              window.location.pathname === "/Search"
-                ? "Menu-link active"
-                : "Menu-link"
-            }
-          >
-            Search
-          </Link>
-        </Menu.Item>
-      
-      </Menu>
-    </div>
-  );
+return(
+  <nav className="Navbar">
+      <h1>
+        FindPaws
+      </h1>
+      <div>
+        <ul className="navbar-nav">
+          <li className="nav-item">
+            <Link
+              to="/Dashboard"
+              className={ window.location.pathname === "/" || window.location.pathname === "/Dashboard"
+                  ? "nav-link active"
+                  : "nav-link"
+              }
+            >
+              Home
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              to="/Found"
+              className={window.location.pathname === "/Found" ? "nav-link active" : "nav-link"}
+            >
+              Found a Pet
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              to="/Lost"
+              className={window.location.pathname === "/Lost" ? "nav-link active" : "nav-link"}
+            >
+              Lost a Pet
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              to="/Search"
+              className={window.location.pathname === "/Search" ? "nav-link active" : "nav-link"}
+            >
+              Search
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </nav>
+);
 }
 
 export default Header;
-
-// <Route path = "/" Dashboard = {}

@@ -5,18 +5,20 @@ import { Layout } from "antd";
 import Header from "../../components/Header/Header";
 import { Carousel } from "antd";
 import Kitty21 from "./images/Kitty21.jpg";
-import GD from "./images/GD.jpg";
-import Anm from "./images/Anm.jpg";
+import Dog1 from "./images/Dog1.jpg";
+import Animals2 from "./images/Animals2.jpg";
+import Pup from "./images/Pup.jpg"
+
 
 const contentStyle = {
-  height: "500px",
-  // color: '#fff',
-  lineHeight: "160px",
+  height: "650px",
+  color: '#fff',
+  lineHeight: "0px",
   textAlign: "center",
-  background: "#364d79",
+  background: "#364d79"
 };
 
-const { Content, Footer } = Layout;
+const { Content, Sider } = Layout;
 
 function Dashboard() {
   return (
@@ -24,50 +26,42 @@ function Dashboard() {
       <Layout className="layout">
         <Header></Header>
         <Layout>
-          <Content style={{ padding: "0 50px" }}>
+          
+          <Content style={{ padding: "20px" }}>
             <div className="site-layout-content">
-              <h1>Find your pet!!!!</h1>
+              
 
               <Carousel autoplay>
                 <div>
-                  <img
-                    src={Kitty21}
-                    class="KITTY"
-                    alt="kitty"
-                    style={contentStyle}
-                  />
+                  <img src={Kitty21} class="KITTY" alt="kitty" style={contentStyle} />      
                 </div>
 
                 <div>
-                  <img src={GD} class="dog" alt="dog" style={contentStyle} />
+                  <img src={Dog1} class="dog" alt="dog" style={contentStyle} />
                 </div>
 
                 <div>
                   <img
-                    src={Anm}
-                    class="animals"
-                    alt="animals"
-                    style={contentStyle}
-                  />
+                    src={Animals2} class="animals" alt="animals"style={contentStyle}/>
+                </div>
+
+                <div>
+                  <img
+                    src={Pup} class="pup" alt="animals"style={contentStyle}/>
                 </div>
               </Carousel>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Lorem mollis aliquam ut porttitor leo a diam sollicitudin. Enim
-                sit amet venenatis urna cursus eget nunc scelerisque. Adipiscing
-                vitae proin sagittis nisl. Pellentesque elit ullamcorper
-                dignissim cras tincidunt lobortis feugiat vivamus. Dictum varius
-                duis at consectetur lorem donec massa sapien faucibus. Enim
-                neque volutpat ac tincidunt vitae.
-              </p>
+              
             </div>
           </Content>
-          {/* <Sider>
-            <Card />
-          </Sider> */}
+           <Sider className="aside">
+            <h1>
+                Find Your Pet
+              </h1>
+              <p>Will help you find your lost pet!</p>
+              <p>If you have found a missing pet submit a form and post it!</p>
+              <p>We understand how difficult it can be to find a pet, and were here to make it easier!</p>
+          </Sider> 
         </Layout>
-        <Footer style={{ textAlign: "center" }}>find your pet</Footer>
       </Layout>
     </div>
   );
