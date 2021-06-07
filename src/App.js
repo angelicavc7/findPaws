@@ -7,11 +7,14 @@ import Lost from "./pages/Lost/Lost";
 import Search from "./pages/Search/Search";
 // import {Menu} from 'antd';
 import Wrapper from "./components/Wrapper";
+import Footer from "./components/Footer/index"
 
 function App() {
   return (
+    <div className="page-container">
+      <div className="content-wrap">
     <Router>
-      <div>
+      
         {/* <Header/> */}
         <Wrapper>
           <Route exact path="/" component={Dashboard} />
@@ -20,8 +23,11 @@ function App() {
           <Route exact path="/lost" component={Lost} />
           <Route exact path="/search" component={Search} />
         </Wrapper>
-      </div>
+      
     </Router>
+    </div>
+    <Footer/>
+    </div>
   );
 }
 export default App;
