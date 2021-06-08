@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Header from "../../components/Header/Header";
 import API from "../../utils/API";
-import Card from "../../components/Card/Card";
+import LostCard from "../../components/Card/LostCard";
+import FoundCard from "../../components/Card/FoundCard";
 function Search() {
   const [foundPets, setFoundPets] = useState([]);
   const [lostPets, setLostPets] = useState([]);
@@ -21,11 +22,11 @@ function Search() {
       <h1>Search pets</h1>
       <h2>Found Pets</h2>
       {foundPets.map((pet) => (
-        <Card />
+        <FoundCard pet={pet} />
       ))}
       <h2>Lost Pets</h2>
       {lostPets.map((pet) => (
-        <Card />
+        <LostCard pet={pet} />
       ))}
     </div>
   );
