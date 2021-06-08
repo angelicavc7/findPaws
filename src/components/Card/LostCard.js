@@ -8,7 +8,11 @@ function PetCard(props) {
   console.log(props);
   return (
     <div className="site-card-wrapper">
-      <Card title={props.pet.petDescription} bordered={false}>
+      <Card title={props.pet.petName} bordered={false}>
+        <div content={props.pet.petType}>
+        Pet Picture
+        contenct
+        </div>
         <Button type="primary" onClick={() => API.deleteLostPet(props.pet.id)}>
           Post Pet
         </Button>

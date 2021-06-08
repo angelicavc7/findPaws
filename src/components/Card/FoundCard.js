@@ -8,6 +8,9 @@ function FoundCard(props) {
   return (
     <div className="site-card-wrapper">
       <Card title={props.pet.petDescription} bordered={false}>
+        <div>
+          Pet Picture
+        </div>
         <Button type="primary" onClick={() => API.deleteFoundPet(props.pet.id)}>
           Post Pet
         </Button>
