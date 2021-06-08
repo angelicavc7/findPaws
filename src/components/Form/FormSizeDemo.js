@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import "antd/dist/antd.css";
 import { Form, Input, Button, Select, DatePicker } from "antd";
-// import { UploadOutlined } from "@ant-design/icons";
 import API from "../../utils/API";
-// import PetCard from "../Card/Card";
 
 export default function FormSizeDemo() {
   const [componentSize, setComponentSize] = useState("default");
@@ -48,7 +46,6 @@ export default function FormSizeDemo() {
     <>
       <h1>Add your lost pet here!</h1>
       <Form
-        // onSubmit={formSubmit}
         labelCol={{
           span: 4,
         }}

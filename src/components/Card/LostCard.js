@@ -10,7 +10,7 @@ function PetCard(props) {
     <div className="site-card-wrapper">
       <Card title={props.pet.petDescription} bordered={false}>
         <Button type="primary" onClick={() => API.deleteLostPet(props.pet.id)}>
-          Post Pet
+          Delete Pet
         </Button>
       </Card>
     </div>

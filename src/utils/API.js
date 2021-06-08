@@ -9,6 +9,9 @@ const API = {
   createLostPet: function (data) {
     return axios.post("http://localhost:3001/api/lost", data);
   },
+  createFoundPet: function (data) {
+    return axios.post("http://localhost:3001/api/found", data);
+  },
   deleteLostPet: function (data) {
     return axios.delete("http://localhost:3001/api/lost", data);
   },
