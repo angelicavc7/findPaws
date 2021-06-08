@@ -1,13 +1,42 @@
 import React, { useState } from "react";
 import "antd/dist/antd.css";
 import { Form, Input, Button, Select, DatePicker } from "antd";
-// import { UploadOutlined } from "@ant-design/icons";
-
-const FoundForm = () => {
+import API from "../../utils/API";
+//addding athis comment
+export default function FoundForm() {
   const [componentSize, setComponentSize] = useState("default");
 
   const onFormLayoutChange = ({ size }) => {
     setComponentSize(size);
+  };
+  const [formState, setFormState] = useState({
+    firstName: "",
+    lastName: "",
+    phoneNumber: "",
+    email: "",
+    petType: "",
+    petDescription: "",
+    circumstances: "",
+    dateFound: "",
+    lastSeen: "",
+  });
+  const formSubmit = (e) => {
+    e.preventDefault();
+    console.log("formState", formState);
+    API.createFoundPet(formState).then((res) => {
+      console.log(res.data);
+      setFormState({
+        firstName: "",
+        lastName: "",
+        phoneNumber: "",
+        email: "",
+        petType: "",
+        petDescription: "",
+        circumstances: "",
+        dateFound: "",
+        lastSeen: "",
+      });
+    });
   };
   return (
     <>
@@ -27,16 +56,40 @@ const FoundForm = () => {
         size={componentSize}
       >
         <Form.Item label="First Name ">
-          <Input />
+          <Input
+            value={formState.firstName}
+            name="First Name "
+            onChange={(e) =>
+              setFormState({ ...formState, firstName: e.target.value })
+            }
+          />
         </Form.Item>
         <Form.Item label="Last Name ">
-          <Input />
+          <Input
+            value={formState.lastName}
+            name="Last name "
+            onChange={(e) =>
+              setFormState({ ...formState, lastName: e.target.value })
+            }
+          />
         </Form.Item>
-        <Form.Item label="Phone Num">
-          <Input />
+        <Form.Item label="Phone Number">
+          <Input
+            value={formState.phoneNumber}
+            name="Phone Number "
+            onChange={(e) =>
+              setFormState({ ...formState, phoneNumber: e.target.value })
+            }
+          />
         </Form.Item>
         <Form.Item label="Email">
-          <Input />
+          <Input
+            value={formState.email}
+            name="Email"
+            onChange={(e) =>
+              setFormState({ ...formState, email: e.target.value })
+            }
+          />
         </Form.Item>
         <Form.Item label="Select Type Of Pet ">
           <Select>
@@ -45,7 +98,12 @@ const FoundForm = () => {
           </Select>
         </Form.Item>
         <Form.Item label="Pet Description">
-          <Input />
+          <Input
+            value={formState.petDescription}
+            onChange={(e) =>
+              setFormState({ ...formState, petDescription: e.target.value })
+            }
+          />
         </Form.Item>
         <Form.Item label="Select Circumstances ">
           <Select>
@@ -58,15 +116,21 @@ const FoundForm = () => {
           <DatePicker />
         </Form.Item>
         <Form.Item label="Last Seen Location">
-          <Input />
+          <Input
+            value={formState.lastSeen}
+            name="Last Seen Location"
+            onChange={(e) =>
+              setFormState({ ...formState, lastSeen: e.target.value })
+            }
+          />
         </Form.Item>
 
         <Form.Item>
-          <Button type="primary">Post Pet </Button>
+          <Button type="primary" onClick={formSubmit}>
+            Post Pet
+          </Button>
         </Form.Item>
       </Form>
     </>
   );
-};
-
-export default FoundForm;
+}
