@@ -67,7 +67,7 @@ export default function FormSizeDemo(props) {
     <>
     <h1>Add your lost pet here!</h1>
       <Form
-        onSubmit={formSubmit}
+        onFinish={formSubmit}
         labelCol={{
           span: 4,
         }}

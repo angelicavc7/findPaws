@@ -7,8 +7,7 @@ const API = {
     return axios.get("http://localhost:3001/api/found");
   },
   createLostPet: function(data){
-    return axios.post("http://localhost:3001/api/lost", data, {
-  }
+    return axios.post("http://localhost:3001/api/lost", data
     )}
 
 }
