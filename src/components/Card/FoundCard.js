@@ -7,6 +7,7 @@ function FoundCard(props) {
   console.log(props);
   return (
     <div className="site-card-wrapper">
+
       <Card className="Card" title={props.pet.petDescription}>
         <ul>
           <li>{props.pet.firstName} {props.pet.lastName}</li>
@@ -19,7 +20,6 @@ function FoundCard(props) {
           <li>{props.pet.lastSeen}</li>
         </ul>
            
-      
       <Button type="primary" onClick={() => API.deleteFoundPet(props.pet.id)}>
           Post Pet
         </Button>
