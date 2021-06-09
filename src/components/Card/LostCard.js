@@ -9,12 +9,13 @@ function PetCard(props) {
   return (
     <div className="site-card-wrapper">
       <Card title={props.pet.petName} bordered={false}>
-        <div content={props.pet.petType}>
-        Pet Picture
-        contenct
+        <div>
+          <ul>
+            <li label="First Name"> {props.pet.petType}</li>
+          </ul>
         </div>
-        <Button type="primary" onClick={() => API.deleteLostPet(props.pet.id)}>
-          Post Pet
+        <Button type="danger" onClick={() => API.deleteLostPet(props.pet.id)}>
+          Delete Pet
         </Button>
       </Card>
     </div>
