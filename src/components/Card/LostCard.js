@@ -11,7 +11,7 @@ function PetCard(props) {
       <Card title={props.pet.petName} bordered={false}>
         <div>
           <ul>
-            <li label="First Name"> {props.pet.petType}</li>
+            <li> {props.pet.petType}</li>
           </ul>
         </div>
         <Button type="danger" onClick={() => API.deleteLostPet(props.pet.id)}>
