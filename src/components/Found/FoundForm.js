@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "antd/dist/antd.css";
-import { Form, Input, Button, Select, DatePicker } from "antd";
+import { Form, Input, Button } from "antd";
 import API from "../../utils/API";
 
 export default function FoundForm() {
@@ -91,12 +91,15 @@ export default function FoundForm() {
             }
           />
         </Form.Item>
-        <Form.Item label="Select Type Of Pet ">
-          <Select>
-            <Select.Option value="Dog">Dog</Select.Option>
-            <Select.Option value="Cat">Cat</Select.Option>
-          </Select>
+        <Form.Item label="Type Of Pet ">
+          <Input
+            value={formState.petType}
+            onChange={(e) =>
+              setFormState({ ...formState, petType: e.target.value })
+            }
+          />
         </Form.Item>
+
         <Form.Item label="Pet Description">
           <Input
             value={formState.petDescription}
@@ -105,15 +108,21 @@ export default function FoundForm() {
             }
           />
         </Form.Item>
-        <Form.Item label="Select Circumstances ">
-          <Select>
-            <Select.Option value="Dog">In Possession </Select.Option>
-            <Select.Option value="Cat">Sighting or still roaming</Select.Option>
-            <Select.Option value="Dog">Deceased </Select.Option>
-          </Select>
+        <Form.Item label="Pet Circumstances ">
+          <Input
+            value={formState.circumstances}
+            onChange={(e) =>
+              setFormState({ ...formState, circumstances: e.target.value })
+            }
+          />
         </Form.Item>
         <Form.Item label="Date Found">
-          <DatePicker />
+          <Input
+            value={formState.dateFound}
+            onChange={(e) =>
+              setFormState({ ...formState, dateFound: e.target.value })
+            }
+          />
         </Form.Item>
         <Form.Item label="Last Seen Location">
           <Input

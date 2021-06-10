@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import "antd/dist/antd.css";
-import { Form, Input, Button, Select, DatePicker } from "antd";
-// import { UploadOutlined } from "@ant-design/icons";
+import { Form, Input, Button } from "antd";
 import API from "../../utils/API";
-// import PetCard from "../Card/Card";
 
 export default function FormSizeDemo() {
   const [componentSize, setComponentSize] = useState("default");
@@ -108,10 +106,13 @@ export default function FormSizeDemo() {
           />
         </Form.Item>
         <Form.Item label="Select Type Of Pet ">
-          <Select>
-            <Select.Option value="Dog">Dog</Select.Option>
-            <Select.Option value="Cat">Cat</Select.Option>
-          </Select>
+          <Input
+            value={formState.petType}
+            name="Pet Name"
+            onChange={(e) =>
+              setFormState({ ...formState, petType: e.target.value })
+            }
+          />
         </Form.Item>
         <Form.Item label="Pet Description">
           <Input
@@ -130,7 +131,12 @@ export default function FormSizeDemo() {
           />
         </Form.Item>
         <Form.Item label="Date Lost">
-          <DatePicker />
+          <Input
+            value={formState.dateLost}
+            onChange={(e) =>
+              setFormState({ ...formState, dateLost: e.target.value })
+            }
+          />
         </Form.Item>
         <Form.Item label="Reward">
           <Input
