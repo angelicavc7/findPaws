@@ -1,5 +1,6 @@
 import axios from "axios";
-const baseUrl = "http://localhost:3001/";
+const baseUrl = "https://backendfindpaws.herokuapp.com/"; 
+
 const API = {
   getAllLostPets: function () {
     return axios.get(baseUrl + "api/lost");
