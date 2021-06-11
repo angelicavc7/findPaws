@@ -15,12 +15,9 @@ function Found() {
             <FoundForm></FoundForm>
           </div>
         </Content>
-        <Footer style={{ textAlign: "center" }}>
-          
-        </Footer>
+        <Footer style={{ textAlign: "center" }}></Footer>
       </Layout>
     </div>
-    // document.getElementById("container")
   );
 }
 export default Found;

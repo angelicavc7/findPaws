@@ -21,7 +21,7 @@ function Search() {
   return (
     <div>
       <Header />
-  
+
       <h2 className="cardPet">Found Pets</h2>
       {foundPets.map((pet) => (
         <FoundCard pet={pet} />

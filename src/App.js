@@ -5,28 +5,24 @@ import Dashboard from "./pages/Dashboard/Dashboard";
 import Found from "./pages/Found/Found";
 import Lost from "./pages/Lost/Lost";
 import Search from "./pages/Search/Search";
-// import {Menu} from 'antd';
 import Wrapper from "./components/Wrapper";
-import Footer from "./components/Footer/index"
+import Footer from "./components/Footer/index";
 
 function App() {
   return (
     <div className="page-container">
       <div className="content-wrap">
-    <Router>
-      
-        {/* <Header/> */}
-        <Wrapper>
-          <Route exact path="/" component={Dashboard} />
-          <Route exact path="/dashboard" component={Dashboard} />
-          <Route exact path="/found" component={Found} />
-          <Route exact path="/lost" component={Lost} />
-          <Route exact path="/search" component={Search} />
-        </Wrapper>
-      
-    </Router>
-    </div>
-    <Footer/>
+        <Router>
+          <Wrapper>
+            <Route exact path="/" component={Dashboard} />
+            <Route exact path="/dashboard" component={Dashboard} />
+            <Route exact path="/found" component={Found} />
+            <Route exact path="/lost" component={Lost} />
+            <Route exact path="/search" component={Search} />
+          </Wrapper>
+        </Router>
+      </div>
+      <Footer />
     </div>
   );
 }

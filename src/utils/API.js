@@ -1,6 +1,5 @@
 import axios from "axios";
 const baseUrl = "http://localhost:3001/";
-// const baseUrl = "heroku address"
 const API = {
   getAllLostPets: function () {
     return axios.get(baseUrl + "api/lost");
