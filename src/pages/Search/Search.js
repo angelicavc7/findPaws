@@ -19,7 +19,7 @@ function Search() {
     });
   }, []);
   return (
-    <div>
+    <div className="containerImage">
       <Header />
   
       <h2 className="cardPet">Found Pets</h2>

@@ -9,8 +9,10 @@ import Search from "./pages/Search/Search";
 import Wrapper from "./components/Wrapper";
 import Footer from "./components/Footer/index"
 
+
 function App() {
   return (
+    
     <div className="page-container">
       <div className="content-wrap">
     <Router>
@@ -28,6 +30,7 @@ function App() {
     </div>
     <Footer/>
     </div>
+   
   );
 }
 export default App;

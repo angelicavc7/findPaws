@@ -7,8 +7,8 @@ function FoundCard(props) {
   console.log(props);
   return (
     <div className="site-card-wrapper">
-      <Card className="Card" title={props.pet.petDescription}>
-        
+      <Card className="Card">
+        <h1> {props.pet.petType}</h1>
         <ul className="text-item">
           <li>
             <label for="name" id="name">
