@@ -1,0 +1,9 @@
+.cardPet {
+font-size: 36px;
+text-align: center;
+border: black solid;
+}
+
+body{
+    background-color: rgb(221, 230, 233);
+}
