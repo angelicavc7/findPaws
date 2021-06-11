@@ -10,15 +10,45 @@ function FoundCard(props) {
       <Card className="Card" title={props.pet.petDescription}>
         <ul>
           <li>
-            {props.pet.firstName} {props.pet.lastName}
+            <label for="name" id="name">
+              Name : {props.pet.firstName} {props.pet.lastName}
+            </label>
           </li>
-          <li>{props.pet.phoneNumber}</li>
-          <li>{props.pet.email}</li>
-          <li>{props.pet.petType}</li>
-          <li>{props.pet.petDescription}</li>
-          <li>{props.pet.circumstances}</li>
-          <li>{props.pet.dateFound}</li>
-          <li>{props.pet.lastSeen}</li>
+          <li>
+            <label for="Phone Number" id="Phone Number">
+              Phone Number: {props.pet.phoneNumber}
+            </label>
+          </li>
+          <li>
+            <label for="Email" id="Email">
+              Email : {props.pet.email}
+            </label>
+          </li>
+          <li>
+            <label for="typeOfPet" id="typeOfPet">
+              Type Of Pet: {props.pet.petType}
+            </label>
+          </li>
+          <li>
+            <label for="Pet Description" id="Pet Description">
+              Pet Description : {props.pet.petDescription}
+            </label>
+          </li>
+          <li>
+            <label for="Pet Description" id="Pet Description">
+              Circumstances : {props.pet.circumstances}
+            </label>
+          </li>
+          <li>
+            <label for="Pet Found" id="Pet Found">
+              Date Found: {props.pet.dateFound}
+            </label>
+          </li>
+          <li>
+            <label for="Last Seen" id="Last Seen">
+              Last Seen : {props.pet.lastSeen}
+            </label>
+          </li>
         </ul>
 
         <Button type="danger" onClick={() => API.deleteFoundPet(props.pet.id)}>
