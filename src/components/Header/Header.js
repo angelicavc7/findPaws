@@ -1,16 +1,21 @@
-import React from 'react'
+import React from 'react';
 import { Link } from "react-router-dom";
 import "./Header.css";
 
-
 function Header() {
-return(
+
+return( 
+
   <nav className="Navbar">
-      <h1>
-        FindPaws
-      </h1>
+      <h1 className ="logoPaws">FindPaws <i class="fas fa-paw"></i> </h1>
+    
+      {/* <div className ="menu-icon" >
+        <i className = 'fas fa-times' 'fa fa-bars'></i>
+      </div> */}
+    
       <div>
-        <ul className="navbar-nav">
+        <ul className=  "navbar-nav" >
+
           <li className="nav-item">
             <Link
               to="/Dashboard"
@@ -50,6 +55,6 @@ return(
       </div>
     </nav>
 );
-}
+};
 
 export default Header;
