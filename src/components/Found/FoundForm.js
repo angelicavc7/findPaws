@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "antd/dist/antd.css";
 import { Form, Input, Button } from "antd";
 import API from "../../utils/API";
+import "./Found.css"
 
 export default function FoundForm() {
   const [componentSize, setComponentSize] = useState("default");
@@ -40,7 +41,7 @@ export default function FoundForm() {
   };
   return (
     <>
-      <h1>Add your found pet here!</h1>
+      <h1 className="AddPet">Add Your Found Pet Here!</h1>
       <Form
         labelCol={{
           span: 4,

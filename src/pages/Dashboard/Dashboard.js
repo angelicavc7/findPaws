@@ -11,7 +11,7 @@ import Pup from "./images/Pup.jpg";
 import Paw from "./images/Paw.png";
 
 const contentStyle = {
-  height: "650px",
+  height: "100%",
   color: "#fff",
   lineHeight: "0px",
   textAlign: "center",
@@ -30,7 +30,7 @@ function Dashboard() {
             <div className="site-layout-content">
               <Carousel autoplay>
                 <div>
-                  <img
+                  <img className="carouselImg"
                     src={Kitty21}
                     className="KITTY"
                     alt="kitty"
@@ -39,7 +39,7 @@ function Dashboard() {
                 </div>
 
                 <div>
-                  <img
+                  <img className="carouselImg"
                     src={Dog1}
                     className="dog"
                     alt="dog"
@@ -48,7 +48,7 @@ function Dashboard() {
                 </div>
 
                 <div>
-                  <img
+                  <img className="carouselImg"
                     src={Animals2}
                     className="animals"
                     alt="animals"
@@ -57,7 +57,7 @@ function Dashboard() {
                 </div>
 
                 <div>
-                  <img
+                  <img className="carouselImg"
                     src={Pup}
                     className="pup"
                     alt="animals"
@@ -68,6 +68,7 @@ function Dashboard() {
             </div>
           </Content>
           <Sider className="aside">
+            <div className="petPaw">
             <h1>Find Your Pet</h1>
             <p>Will help you find your lost pet!</p>
             <p>If you have found a missing pet submit a form and post it!</p>
@@ -79,6 +80,7 @@ function Dashboard() {
             <div>
               <img src={Paw} className="paw" alt="animals" />
             </div>
+           </div> 
           </Sider>
         </Layout>
       </Layout>

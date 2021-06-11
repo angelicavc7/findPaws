@@ -13,18 +13,29 @@
 .Card {
   overflow: hidden;
   box-shadow: 0 2px 20px;
-  color:gray;
+  color:rgb(78, 215, 250);
   display:flex;
+  flex: 1;
   border-radius: 5px;
   flex-direction:column;
   justify-content: space-between;
   cursor: pointer;
   transform: 200ms ease-in;
-  width: 25rem;
+  width: 30rem;
+  font-weight: bolder;
 }
 .site-card-wrapper :hover{
   transform:scale(1.1);
-  background-color: rgb(209, 235, 243);
-  color: black;
+  background-color: rgb(78, 179, 209);
+  color: rgb(237, 241, 241);
   box-shadow: 0px, 0px 15px 0px;
 }
+ul{
+  list-style-type: none;
+  font-size: 20px;
+}
+.Card title{ 
+  font-size: 35px;
+  font-weight: bold;
+}
+

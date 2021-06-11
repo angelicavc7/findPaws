@@ -8,7 +8,8 @@ function PetCard(props) {
   console.log(props);
   return (
     <div className="site-card-wrapper">
-      <Card className="Card" title={props.pet.petName}>
+      <Card className="Card">
+        <h1> {props.pet.petName}</h1>
         <ul>
           <li>
             <label for="name" id="name">

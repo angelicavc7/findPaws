@@ -3,11 +3,17 @@ import { Link } from "react-router-dom";
 import "./Header.css";
 
 function Header() {
-  return (
-    <nav className="Navbar">
-      <h1 className="logoPaws">
-        FindPaws <i class="fas fa-paw"></i>{" "}
-      </h1>
+  
+
+return( 
+
+  <nav className="Navbar">
+      <h1 className ="logoPaws">FindPaws <i class="fas fa-paw"></i> </h1>
+    
+      {/* <div className ="menu-icon" >
+        <i className = 'fas fa-times' 'fa fa-bars'></i>
+      </div> */}
+    
       <div>
         <ul className="navbar-nav">
           <li className="nav-item">

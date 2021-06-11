@@ -51,3 +51,6 @@
 .content-wrap {
   flex: 1;
 }
+.containerImage{
+  background-image: url(./Background/Grey.jpg);
+}
